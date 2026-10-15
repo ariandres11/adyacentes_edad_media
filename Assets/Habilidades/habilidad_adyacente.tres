@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="HabilidadAdyacentes" format=3 uid="uid://bnj6x7kw144dw"]
+
+[ext_resource type="Script" uid="uid://cqkjdmyhf4k73" path="res://Assets/Scripts/HabilidadAdyacentes.gd" id="1_dmcxy"]
+
+[resource]
+script = ExtResource("1_dmcxy")
+metadata/_custom_type_script = "uid://bv3nl45bl0m8h"

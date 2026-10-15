@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://4x3bpo88j5es"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1oun"]
+albedo_color = Color(1, 0.22745098, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6fj2g"]
+material = SubResource("StandardMaterial3D_y1oun")
+height = 0.5
+
+[node name="Casilla" type="Node3D" unique_id=68293655]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1133830434]
+mesh = SubResource("CylinderMesh_6fj2g")

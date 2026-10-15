@@ -1,0 +1,14 @@
+[remap]
+
+importer="image"
+type="Image"
+uid="uid://ceu6pvel1tkc5"
+path="res://.godot/imported/campesino.png-c69b3cbab4c1cd2255f42d5659ea81ed.image"
+
+[deps]
+
+source_file="res://Assets/Sprites/campesino.png"
+dest_files=["res://.godot/imported/campesino.png-c69b3cbab4c1cd2255f42d5659ea81ed.image"]
+
+[params]
+

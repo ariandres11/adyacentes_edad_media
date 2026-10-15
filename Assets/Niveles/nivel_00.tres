@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="NivelData" format=3 uid="uid://c0fdltk37krpl"]
+
+[ext_resource type="Script" uid="uid://bq8tcll46kph8" path="res://Assets/Scripts/NivelData.gd" id="1_igdnu"]
+
+[resource]
+script = ExtResource("1_igdnu")
+metadata/_custom_type_script = "uid://bq8tcll46kph8"

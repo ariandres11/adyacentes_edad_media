@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bppyunwhcc82x"]
+
+[ext_resource type="PackedScene" uid="uid://tdbxt8wlkaju" path="res://Assets/Scenes/level_manager.tscn" id="1_l26l0"]
+[ext_resource type="PackedScene" uid="uid://4x3bpo88j5es" path="res://Assets/Scenes/casilla.tscn" id="2_qplxx"]
+[ext_resource type="PackedScene" uid="uid://eymo66ppjg3h" path="res://Assets/Scenes/personaje.tscn" id="3_elf4b"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l1cjf"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_l26l0"]
+sky_material = SubResource("ProceduralSkyMaterial_l1cjf")
+
+[sub_resource type="Environment" id="Environment_qplxx"]
+background_mode = 2
+sky = SubResource("Sky_l26l0")
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_6fj2g"]
+size = Vector2(10, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_6fj2g"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[node name="World" type="Node3D" unique_id=1334321672]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1110488988]
+environment = SubResource("Environment_qplxx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=117194396]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MainCam" type="Camera3D" parent="." unique_id=182065569]
+transform = Transform3D(0.95030975, -0.09137572, 0.2975936, 0.00433136, 0.9597403, 0.28085566, -0.3112759, -0.26561087, 0.91244614, 0.72697544, 2.1389215, 3.4950428)
+
+[node name="Piso" type="MeshInstance3D" parent="." unique_id=1768543480]
+mesh = SubResource("PlaneMesh_6fj2g")
+
+[node name="Refe" type="MeshInstance3D" parent="." unique_id=1735474209]
+mesh = SubResource("BoxMesh_6fj2g")
+
+[node name="LevelManager" parent="." unique_id=1779932834 instance=ExtResource("1_l26l0")]
+escena_nodo = ExtResource("2_qplxx")
+escena_pj = ExtResource("3_elf4b")

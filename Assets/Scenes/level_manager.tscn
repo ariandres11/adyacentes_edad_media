@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://tdbxt8wlkaju"]
+
+[ext_resource type="Script" uid="uid://ckxq1s65yyhfm" path="res://Assets/Scripts/level_manager.gd" id="1_i8g3o"]
+[ext_resource type="PackedScene" uid="uid://dpli1qwqsiq2x" path="res://Assets/Scenes/nodo.tscn" id="2_m133p"]
+
+[node name="LevelManager" type="Node3D" unique_id=1699735649]
+script = ExtResource("1_i8g3o")
+escena_nodo = ExtResource("2_m133p")
+ruta_json = "res://Assets/Niveles/nivel_circulo.json"
